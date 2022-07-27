@@ -2,24 +2,17 @@ package Basicprogram;
 
 public class BasicCore_program {
 	
-	static int first= 12;  static int second = 14;
-	
 	public static void main(String[] args) {
 		
-		System.out.println("--Before swap--");
-        System.out.println("First number = " + first);
-        System.out.println("Second number = " + second);
+		char ch = 'h';
 
-        int  temporary = first;
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
+            System.out.println(ch + " is vowel");
+        else
+            System.out.println(ch + " is consonant");
 
-        first = second;
-        second = temporary;
+	
 
-        System.out.println("--After swap--");
-        System.out.println("First number = " + first);
-        System.out.println("Second number = " + second);
-		
 	}
 
 }
-		
