@@ -1,17 +1,25 @@
 package Basicprogram;
-import java.util.Scanner;
+
 public class BasicCore_program {
+	
+	static int first= 12;  static int second = 14;
 	
 	public static void main(String[] args) {
 		
-		int dividend = 25, divisor = 25 ;
+		System.out.println("--Before swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
 
-	    int quotient = dividend / divisor;
-	    int remainder = dividend % divisor;
+        int  temporary = first;
 
-	    System.out.println("Quotient = " + quotient);
-	    System.out.println("Remainder = " + remainder);
-	  
+        first = second;
+        second = temporary;
+
+        System.out.println("--After swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+		
 	}
 
 }
+		
